@@ -1,7 +1,0 @@
-{
-  "buildCommand": "cd manish-portfolio && npm run build",
-  "devCommand": "cd manish-portfolio && npm run dev",
-  "installCommand": "cd manish-portfolio && npm install",
-  "framework": "nextjs",
-  "outputDirectory": "manish-portfolio/.next"
-}
