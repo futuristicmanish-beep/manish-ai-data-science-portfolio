@@ -12,7 +12,6 @@ import { motion } from "framer-motion";
 import { Container } from "@/components/ui";
 import { ProfileImage } from "./ProfileImage";
 import { HeroActions } from "./HeroActions";
-import { MeetManish } from "./MeetManish";
 import { ScrollIndicator } from "./ScrollIndicator";
 import { profileData } from "@/data/profile";
 import { staggerContainer, staggerItem } from "@/lib/animations";
@@ -87,14 +86,6 @@ export function Hero() {
                 primaryAction={actions.primary}
                 secondaryAction={actions.secondary}
                 tertiaryAction={actions.tertiary}
-              />
-            </motion.div>
-
-            {/* Meet Manish */}
-            <motion.div variants={staggerItem}>
-              <MeetManish
-                voiceSrc={assets.voiceIntro}
-                videoSrc={assets.videoIntro}
               />
             </motion.div>
           </motion.div>

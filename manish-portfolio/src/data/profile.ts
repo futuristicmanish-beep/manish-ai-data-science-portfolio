@@ -24,8 +24,6 @@ export const profileData = {
   assets: {
     profileImage:"/images/profile.jpeg", // Replace with actual image
     resume: "/documents/manish-resume.pdf", // Add actual resume or remove CTA
-    voiceIntro: "/audio/manish-introduction.mp3", // Optional: add actual audio
-    videoIntro: "/videos/manish-introduction.mp4", // Optional: add actual video
   },
   
   // Hero actions

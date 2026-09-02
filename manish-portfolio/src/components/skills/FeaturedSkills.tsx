@@ -61,14 +61,14 @@ export function FeaturedSkills({ skills }: FeaturedSkillsProps) {
               <Card
                 variant="default"
                 className={cn(
-                  "relative overflow-hidden",
+                  "relative overflow-hidden h-full",
                   "hover:border-[rgb(var(--color-primary)/0.4)]",
                   "transition-colors duration-200"
                 )}
               >
-                <div className="p-6 space-y-4 text-center">
+                <div className="p-6 h-full flex flex-col justify-between text-center min-h-[180px]">
                   {/* Icon */}
-                  <div className="flex justify-center">
+                  <div className="flex justify-center flex-shrink-0">
                     <div
                       className={cn(
                         "w-14 h-14 rounded-xl",
@@ -81,15 +81,18 @@ export function FeaturedSkills({ skills }: FeaturedSkillsProps) {
                     </div>
                   </div>
 
-                  {/* Name */}
-                  <h4 className="text-base font-semibold text-[rgb(var(--color-foreground))]">
-                    {skill.name}
-                  </h4>
+                  {/* Content - grows to fill available space */}
+                  <div className="flex flex-col justify-center flex-grow space-y-3">
+                    {/* Name */}
+                    <h4 className="text-base font-semibold text-[rgb(var(--color-foreground))] leading-tight">
+                      {skill.name}
+                    </h4>
 
-                  {/* Status */}
-                  <span className="text-xs text-[rgb(var(--color-muted-foreground))] capitalize">
-                    {skill.status}
-                  </span>
+                    {/* Status */}
+                    <span className="text-xs text-[rgb(var(--color-muted-foreground))] capitalize">
+                      {skill.status}
+                    </span>
+                  </div>
                 </div>
 
                 {/* Decorative gradient bar */}

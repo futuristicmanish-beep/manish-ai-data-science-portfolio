@@ -24,11 +24,18 @@ export function useActiveSection({ sectionIds, offset = 100 }: UseActiveSectionO
     };
 
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
+      // Find the topmost visible section
+      const visibleSections = entries
+        .filter(entry => entry.isIntersecting)
+        .sort((a, b) => {
+          const rectA = a.target.getBoundingClientRect();
+          const rectB = b.target.getBoundingClientRect();
+          return rectA.top - rectB.top;
+        });
+
+      if (visibleSections.length > 0) {
+        setActiveSection(visibleSections[0].target.id);
+      }
     };
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
@@ -41,8 +48,25 @@ export function useActiveSection({ sectionIds, offset = 100 }: UseActiveSectionO
       }
     });
 
+    // Handle initial state - check if we're at the very top
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // If at the very top (within 200px), no section should be active
+      if (scrollTop < 200) {
+        setActiveSection("");
+      }
+    };
+
+    // Initial check
+    handleScroll();
+    
+    // Listen for scroll events to handle top-of-page case
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
     return () => {
       observer.disconnect();
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [sectionIds, offset]);
 

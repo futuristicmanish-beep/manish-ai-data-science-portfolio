@@ -69,16 +69,20 @@ export function Header() {
               // Fixed active state logic - only ONE item can be active
               let isActive = false;
               
-              // Priority 1: Exact route match (Projects page, etc.)
-              if (pathname === item.href) {
+              // Priority 1: Non-homepage exact route match (Projects page, etc.)
+              if (item.href !== "/" && pathname === item.href) {
                 isActive = true;
               }
-              // Priority 2: Route prefix match (Projects sub-pages)
+              // Priority 2: Non-homepage route prefix match (Projects sub-pages)
               else if (item.href !== "/" && baseHref !== "/" && pathname.startsWith(baseHref)) {
                 isActive = true;
               }
-              // Priority 3: Homepage section match (only on homepage)
+              // Priority 3: Homepage section match (only on homepage and when section exists)
               else if (isHomepage && itemSection && activeSection === itemSection) {
+                isActive = true;
+              }
+              // Priority 4: Home link is active only on homepage when no specific section is active
+              else if (item.href === "/" && isHomepage && !activeSection) {
                 isActive = true;
               }
 
