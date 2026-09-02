@@ -201,7 +201,7 @@ export function ExperienceEducationSection() {
                       development, AI/ML, and healthcare technology through ZYNETRA Healthcare and other projects.
                     </p>
                     <p className="text-sm text-[rgb(var(--color-primary))] font-medium mt-3">
-                      Open to internship opportunities starting Summer 2026
+                      Open to internship opportunities and project collaborations
                     </p>
                   </div>
                 </Card>
