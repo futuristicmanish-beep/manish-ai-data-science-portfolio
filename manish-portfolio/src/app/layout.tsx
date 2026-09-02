@@ -34,6 +34,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <head>
         <ThemeScript />
+        {/* Google Search Console Verification */}
+        <meta name="google-site-verification" content="WNODy3MfVrh5xsm2Ev4fpLtBfsw41KlmK-k-xeVzL88" />
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
