@@ -11,6 +11,7 @@ import { Card } from "@/components/ui";
 import { Mail, MapPin, ExternalLink } from "lucide-react";
 import { CONTACT_INFO, SOCIAL_LINKS } from "@/config/constants";
 import { CopyEmailButton } from "./CopyEmailButton";
+import { analytics } from "@/components/analytics";
 import { cn } from "@/lib/utils";
 
 // SVG Icons for social platforms
@@ -27,6 +28,20 @@ const LinkedInIcon = () => (
 );
 
 export function ContactInfo() {
+  // Analytics tracking handlers
+  const handleEmailClick = () => {
+    analytics.trackContact('email');
+  };
+
+  const handleGitHubClick = () => {
+    analytics.trackExternalLink('GitHub', SOCIAL_LINKS.github);
+    analytics.trackContact('github');
+  };
+
+  const handleLinkedInClick = () => {
+    analytics.trackExternalLink('LinkedIn', SOCIAL_LINKS.linkedin);
+    analytics.trackContact('linkedin');
+  };
   return (
     <div className="space-y-6">
       {/* Primary Contact Card */}
@@ -48,6 +63,7 @@ export function ContactInfo() {
         <div className="space-y-3">
           <a
             href={`mailto:${CONTACT_INFO.email}`}
+            onClick={handleEmailClick}
             className={cn(
               "block w-full px-4 py-3 rounded-lg",
               "text-sm font-medium text-[rgb(var(--color-primary))]",
@@ -95,6 +111,7 @@ export function ContactInfo() {
               href={SOCIAL_LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleGitHubClick}
               className={cn(
                 "flex items-center gap-3 px-4 py-3 rounded-lg",
                 "text-sm font-medium text-[rgb(var(--color-foreground))]",
@@ -117,6 +134,7 @@ export function ContactInfo() {
               href={SOCIAL_LINKS.linkedin}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleLinkedInClick}
               className={cn(
                 "flex items-center gap-3 px-4 py-3 rounded-lg",
                 "text-sm font-medium text-[rgb(var(--color-foreground))]",

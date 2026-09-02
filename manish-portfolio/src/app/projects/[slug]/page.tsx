@@ -9,6 +9,7 @@ import { notFound } from "next/navigation";
 import { Container, Section, Background, GradientOrb, Heading, Badge, Card, Divider } from "@/components/ui";
 import { getProjectBySlug, getRelatedProjects, getNextProject, getPreviousProject, projects } from "@/data/projects";
 import { ProjectNavigation, RelatedProjects, SkillsUsed, CaseStudyCTA, CaseStudyNav } from "@/components/projects";
+import { ProjectViewTracker } from "@/components/analytics";
 import { ArrowUpRight, AlertCircle, Lightbulb, TrendingUp, ExternalLink } from "lucide-react";
 import { generateProjectMetadata, getProjectJsonLd } from "@/config/seo";
 import type { Metadata } from "next";
@@ -97,6 +98,12 @@ export default async function ProjectCaseStudyPage({ params }: PageProps) {
 
   return (
     <>
+      {/* Project View Tracking */}
+      <ProjectViewTracker 
+        projectSlug={project.slug} 
+        projectTitle={project.title} 
+      />
+      
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"

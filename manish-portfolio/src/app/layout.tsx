@@ -6,6 +6,7 @@ import { MotionConfig } from "@/lib/motion-config";
 import { Header } from "@/components/layout";
 import { Footer } from "@/components/layout";
 import { BackToTop } from "@/components/ui";
+import { Analytics } from "@/components/analytics";
 import { defaultMetadata, getWebsiteJsonLd, getPersonJsonLd } from "@/config/seo";
 import "./globals.css";
 
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         />
       </head>
       <body className="min-h-full flex flex-col">
+        <Analytics />
         <ThemeProvider>
           <MotionConfig>
             <Header />
