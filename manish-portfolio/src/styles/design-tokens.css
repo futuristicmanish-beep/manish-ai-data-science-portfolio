@@ -1,0 +1,278 @@
+/**
+ * DESIGN TOKENS
+ * Manish Vidhya Narayanan | AI & Data Science Portfolio
+ * 
+ * Centralized design system tokens for consistent theming.
+ * All color, spacing, typography, and effect values are defined here.
+ */
+
+@import "tailwindcss";
+
+/* ============================================
+   COLOR TOKENS
+   ============================================ */
+
+:root {
+  /* LUXURY NOIR DARK THEME (Default) */
+  --color-background: 8 8 8; /* #080808 - Deep black */
+  --color-foreground: 245 245 240; /* #F5F5F0 - Ivory */
+  --color-muted: 184 184 178; /* #B8B8B2 - Light grey */
+  --color-muted-foreground: 119 119 119; /* #777777 - Mid grey */
+  
+  /* Card & Surface */
+  --color-card: 20 20 20; /* #141414 - Card surface */
+  --color-card-hover: 25 25 25; /* #191919 - Elevated card */
+  
+  /* Border */
+  --color-border: 43 43 43; /* #2B2B2B - Subtle border */
+  --color-border-subtle: 20 20 20; /* #141414 */
+  
+  /* Primary - Gold (Luxury accent) */
+  --color-primary: 212 175 55; /* #D4AF37 - Gold */
+  --color-primary-hover: 240 215 122; /* #F0D77A - Bright gold */
+  --color-primary-foreground: 8 8 8; /* Dark text on gold */
+  
+  /* Secondary - Silver (Refined accent) */
+  --color-secondary: 192 192 192; /* #C0C0C0 - Silver */
+  --color-secondary-hover: 133 133 133; /* #858585 - Dark silver */
+  --color-secondary-foreground: 8 8 8; /* Dark text on silver */
+  
+  /* Accent - Gold highlight */
+  --color-accent: 212 175 55; /* #D4AF37 - Gold */
+  --color-accent-hover: 240 215 122; /* #F0D77A - Bright gold */
+  --color-accent-foreground: 8 8 8;
+  
+  /* Semantic Colors */
+  --color-success: 34 197 94; /* green-500 */
+  --color-warning: 234 179 8; /* yellow-500 */
+  --color-error: 239 68 68; /* red-500 */
+  
+  /* Glass Effect */
+  --glass-bg: rgba(20, 20, 20, 0.7);
+  --glass-border: rgba(43, 43, 43, 0.5);
+  
+  /* Glow Colors - Subtle gold/silver */
+  --glow-primary: rgba(212, 175, 55, 0.2);
+  --glow-secondary: rgba(192, 192, 192, 0.15);
+  --glow-accent: rgba(212, 175, 55, 0.2);
+}
+
+[data-theme="light"] {
+  /* LIGHT GREY + GOLD + SILVER THEME */
+  --color-background: 242 242 240; /* #F2F2F0 - Light grey */
+  --color-foreground: 28 28 28; /* #1C1C1C - Graphite text */
+  --color-muted: 111 114 117; /* #6F7275 - Dark silver */
+  --color-muted-foreground: 85 85 85; /* #555555 - Secondary text */
+  
+  /* Card & Surface */
+  --color-card: 250 250 248; /* #FAFAF8 - Card background */
+  --color-card-hover: 231 231 229; /* #E7E7E5 - Secondary background */
+  
+  /* Border */
+  --color-border: 209 209 206; /* #D1D1CE - Silver border */
+  --color-border-subtle: 231 231 229; /* #E7E7E5 */
+  
+  /* Primary - Gold (Premium accent) */
+  --color-primary: 201 162 39; /* #C9A227 - Gold */
+  --color-primary-hover: 216 184 76; /* #D8B84C - Light gold */
+  --color-primary-foreground: 255 255 255; /* White text on gold */
+  
+  /* Secondary - Silver (Refined accent) */
+  --color-secondary: 167 169 172; /* #A7A9AC - Silver */
+  --color-secondary-hover: 111 114 117; /* #6F7275 - Dark silver */
+  --color-secondary-foreground: 28 28 28; /* Dark text on silver */
+  
+  /* Accent - Gold highlight */
+  --color-accent: 201 162 39; /* #C9A227 - Gold */
+  --color-accent-hover: 216 184 76; /* #D8B84C - Light gold */
+  --color-accent-foreground: 255 255 255;
+  
+  /* Semantic Colors */
+  --color-success: 22 163 74; /* green-600 */
+  --color-warning: 202 138 4; /* yellow-600 */
+  --color-error: 220 38 38; /* red-600 */
+  
+  /* Glass Effect */
+  --glass-bg: rgba(250, 250, 248, 0.8);
+  --glass-border: rgba(209, 209, 206, 0.6);
+  
+  /* Glow Colors - Subtle gold/silver */
+  --glow-primary: rgba(201, 162, 39, 0.15);
+  --glow-secondary: rgba(167, 169, 172, 0.1);
+  --glow-accent: rgba(201, 162, 39, 0.15);
+}
+
+/* ============================================
+   SPACING SYSTEM
+   ============================================ */
+
+:root {
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-sm: 0.75rem; /* 12px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-2xl: 3rem; /* 48px */
+  --spacing-3xl: 4rem; /* 64px */
+  --spacing-4xl: 6rem; /* 96px */
+  --spacing-5xl: 8rem; /* 128px */
+  
+  /* Section Spacing */
+  --section-spacing-mobile: 4rem; /* 64px */
+  --section-spacing-tablet: 6rem; /* 96px */
+  --section-spacing-desktop: 8rem; /* 128px */
+  
+  /* Container Padding */
+  --container-padding-mobile: 1rem; /* 16px */
+  --container-padding-tablet: 2rem; /* 32px */
+  --container-padding-desktop: 3rem; /* 48px */
+}
+
+/* ============================================
+   BORDER RADIUS
+   ============================================ */
+
+:root {
+  --radius-sm: 0.375rem; /* 6px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-lg: 0.75rem; /* 12px */
+  --radius-xl: 1rem; /* 16px */
+  --radius-2xl: 1.5rem; /* 24px */
+  --radius-pill: 9999px;
+}
+
+/* ============================================
+   TYPOGRAPHY SCALE
+   ============================================ */
+
+:root {
+  /* Font Families */
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), "Courier New", monospace;
+  
+  /* Font Sizes */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+  --text-5xl: 3rem; /* 48px */
+  --text-6xl: 3.75rem; /* 60px */
+  --text-7xl: 4.5rem; /* 72px */
+  --text-8xl: 6rem; /* 96px */
+  
+  /* Line Heights */
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
+  
+  /* Letter Spacing */
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+}
+
+/* ============================================
+   SHADOW SYSTEM
+   ============================================ */
+
+:root {
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  
+  /* Glow Shadows */
+  --shadow-glow-primary: 0 0 20px var(--glow-primary);
+  --shadow-glow-secondary: 0 0 20px var(--glow-secondary);
+  --shadow-glow-accent: 0 0 20px var(--glow-accent);
+  
+  /* Card Shadow */
+  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-card-hover: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+/* ============================================
+   Z-INDEX SCALE
+   ============================================ */
+
+:root {
+  --z-base: 0;
+  --z-dropdown: 1000;
+  --z-sticky: 1100;
+  --z-fixed: 1200;
+  --z-modal-backdrop: 1300;
+  --z-modal: 1400;
+  --z-popover: 1500;
+  --z-tooltip: 1600;
+}
+
+/* ============================================
+   ANIMATION TIMING
+   ============================================ */
+
+:root {
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 350ms;
+  --duration-slower: 500ms;
+  
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS (Reference)
+   ============================================ */
+
+/* 
+  sm: 640px
+  md: 768px
+  lg: 1024px
+  xl: 1280px
+  2xl: 1536px
+*/
+
+/* ============================================
+   GLASSMORPHISM UTILITY
+   ============================================ */
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-strong {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
