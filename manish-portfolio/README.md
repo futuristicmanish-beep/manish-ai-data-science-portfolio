@@ -1,28 +1,34 @@
 # Manish Vidhya Narayanan | AI & Data Science Portfolio
 
-A modern, performant portfolio website built with Next.js 16, React 19, and TypeScript. Showcases AI/ML projects, skills, experience, and professional journey.
+A modern, high-performance portfolio website built with Next.js 16, React 19, and TypeScript. Features a Luxury Noir + Gold/Silver visual identity and showcases AI/ML projects, skills, and professional journey.
 
 ## 🚀 Tech Stack
 
-- **Framework**: Next.js 16.3.3 (App Router)
+- **Framework**: Next.js 16.3.3 (App Router + Turbopack)
 - **UI Library**: React 19.2.8
 - **Language**: TypeScript 5 (Strict Mode)
 - **Styling**: Tailwind CSS v4
 - **Animations**: Framer Motion 13
 - **Icons**: Lucide React
-- **Build**: Turbopack
+- **Deployment**: Vercel
+
+## 🎨 Visual Identity
+
+**Theme**: Luxury Noir + Gold/Silver  
+**Dark Mode**: Deep black (#080808) with gold (#D4AF37) and silver (#C0C0C0) accents  
+**Light Mode**: Light grey (#F2F2F0) with gold (#C9A227) and silver (#A7A9AC) accents
 
 ## 📋 Prerequisites
 
 - Node.js 20+ (LTS recommended)
-- npm, yarn, or pnpm
+- npm package manager
 
 ## 🛠️ Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/manishvidhya/portfolio.git
-cd portfolio
+git clone https://github.com/futuristicmanish-beep/manish-ai-data-science-portfolio.git
+cd manish-ai-data-science-portfolio/manish-portfolio
 
 # Install dependencies
 npm install
@@ -30,14 +36,14 @@ npm install
 
 ## 🔧 Environment Variables
 
-Create a `.env.local` file in the root directory:
+Create a `.env.local` file in the project directory:
 
 ```bash
-# Required: Your production website URL
+# Required: Your production website URL (no trailing slash)
 NEXT_PUBLIC_SITE_URL=https://manishvidhya.com
 ```
 
-See `.env.example` for all available variables.
+See `.env.example` for all available variables and documentation.
 
 ## 🏃‍♂️ Development
 
@@ -45,17 +51,20 @@ See `.env.example` for all available variables.
 # Start development server
 npm run dev
 
-# Open http://localhost:3000
+# Open http://localhost:3000 in your browser
 ```
 
-## 🏗️ Build
+## 🏗️ Build & Validation
 
 ```bash
-# Run TypeScript check
+# Run type checking
 npx tsc --noEmit
 
-# Run ESLint
+# Run linting
 npm run lint
+
+# Run security audit
+npm audit
 
 # Create production build
 npm run build
@@ -63,6 +72,12 @@ npm run build
 # Start production server
 npm start
 ```
+
+**Expected Results**:
+- TypeScript: 0 errors
+- ESLint: 0 errors, 0 warnings
+- Security: 0 vulnerabilities
+- Build: Success (7 routes generated)
 
 ## 📁 Project Structure
 
@@ -264,10 +279,10 @@ This is a personal portfolio. However, if you find bugs or have suggestions, ple
 
 ## 📧 Contact
 
-- Email: contact@manishvidhya.com
-- GitHub: [@manishvidhya](https://github.com/manishvidhya)
-- LinkedIn: [/in/manishvidhya](https://linkedin.com/in/manishvidhya)
+- **Email**: futuristic.manish@gmail.com
+- **GitHub**: [@futuristicmanish-beep](https://github.com/futuristicmanish-beep)
+- **LinkedIn**: [Manish Vidhya Narayanan](https://www.linkedin.com/in/manish-v-8893893ab)
 
 ---
 
-Built with ❤️ using Next.js, React, and TypeScript
+**Built with ❤️ using Next.js 16, React 19, and TypeScript 5**
