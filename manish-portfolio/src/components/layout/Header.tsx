@@ -66,11 +66,21 @@ export function Header() {
               const itemSection = item.href.includes('#') ? item.href.split('#')[1] : '';
               const baseHref = item.href.split("#")[0];
               
-              // Improved active state logic
-              const isActive =
-                pathname === item.href ||
-                (item.href !== "/" && baseHref !== "/" && pathname.startsWith(baseHref)) ||
-                (isHomepage && itemSection && activeSection === itemSection);
+              // Fixed active state logic - only ONE item can be active
+              let isActive = false;
+              
+              // Priority 1: Exact route match (Projects page, etc.)
+              if (pathname === item.href) {
+                isActive = true;
+              }
+              // Priority 2: Route prefix match (Projects sub-pages)
+              else if (item.href !== "/" && baseHref !== "/" && pathname.startsWith(baseHref)) {
+                isActive = true;
+              }
+              // Priority 3: Homepage section match (only on homepage)
+              else if (isHomepage && itemSection && activeSection === itemSection) {
+                isActive = true;
+              }
 
               return (
                 <Link

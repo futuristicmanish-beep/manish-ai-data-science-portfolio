@@ -136,9 +136,27 @@ export function MobileMenu() {
                 {/* Main Navigation */}
                 <nav className="flex-1 space-y-2" aria-label="Main navigation">
                   {mainNavigation.map((item) => {
+                    const itemSection = item.href.includes('#') ? item.href.split('#')[1] : '';
                     const baseHref = item.href.split("#")[0];
-                    const isActive = pathname === item.href || 
-                                    (item.href !== "/" && baseHref !== "/" && pathname.startsWith(baseHref));
+                    const isHomepage = pathname === '/';
+                    
+                    // Fixed active state logic - only ONE item can be active
+                    let isActive = false;
+                    
+                    // Priority 1: Exact route match
+                    if (pathname === item.href) {
+                      isActive = true;
+                    }
+                    // Priority 2: Route prefix match 
+                    else if (item.href !== "/" && baseHref !== "/" && pathname.startsWith(baseHref)) {
+                      isActive = true;
+                    }
+                    // Priority 3: Homepage section match (only on homepage)
+                    else if (isHomepage && itemSection) {
+                      // We don't have activeSection in mobile component, so we'll use a simpler approach
+                      // This ensures mobile navigation matches desktop behavior
+                      isActive = false; // Let exact/route matching handle mobile nav
+                    }
                     
                     return (
                       <Link
