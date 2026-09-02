@@ -33,10 +33,10 @@ export function ExperienceEducationSection() {
             className="text-center space-y-6 max-w-3xl mx-auto"
           >
             <Heading level={2} gradient>
-              Experience & Education
+              Education & Experience
             </Heading>
             <p className="text-xl text-[rgb(var(--color-muted-foreground))]">
-              My academic foundation and learning journey in AI and Data Science
+              Academic foundation and hands-on learning in AI, data science, and software development
             </p>
           </motion.div>
 
@@ -193,11 +193,15 @@ export function ExperienceEducationSection() {
                   </div>
                   <div className="space-y-2">
                     <h3 className="text-lg font-semibold text-[rgb(var(--color-foreground))]">
-                      Building Experience
+                      Building Practical Experience
                     </h3>
                     <p className="text-base text-[rgb(var(--color-muted-foreground))]">
-                      Currently building experience through projects, technical learning, and hands-on development. 
-                      Check out my projects to see what I&apos;m working on.
+                      Currently a first-year student focused on building experience through hands-on projects, 
+                      technical learning, and real-world problem solving. Actively developing skills in full-stack 
+                      development, AI/ML, and healthcare technology through ZYNETRA Healthcare and other projects.
+                    </p>
+                    <p className="text-sm text-[rgb(var(--color-primary))] font-medium mt-3">
+                      Open to internship opportunities starting Summer 2026
                     </p>
                   </div>
                 </Card>

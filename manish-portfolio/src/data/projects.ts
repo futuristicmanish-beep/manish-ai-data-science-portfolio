@@ -60,8 +60,8 @@ export const projects: Project[] = [
     id: "zynetra",
     slug: "zynetra-healthcare",
     title: "ZYNETRA Healthcare",
-    shortDescription: "Healthcare ecosystem platform connecting patients, hospitals, and healthcare services",
-    description: "A learning project exploring how technology can transform healthcare delivery by connecting patients, hospitals, doctors, blood banks, ambulances, and pharmacies through an intelligent digital platform.",
+    shortDescription: "Learning project: Healthcare ecosystem platform connecting patients, hospitals, and services",
+    description: "A comprehensive learning project exploring how technology can transform healthcare delivery. Building a digital platform to connect patients, hospitals, doctors, blood banks, ambulances, and pharmacies. Developing full-stack development skills while addressing real healthcare challenges.",
     category: ["healthcare", "full-stack", "ai"],
     technologies: [
       "React",
@@ -83,15 +83,17 @@ export const projects: Project[] = [
       "/images/projects/zynetra-3.jpg"
     ],
     caseStudy: {
-      problem: "Healthcare systems often struggle with fragmented services, where patients face challenges finding doctors, hospitals, blood resources, and emergency services quickly. Critical healthcare information is scattered across multiple platforms, leading to delays in emergency situations and inefficient resource allocation.",
-      solution: "ZYNETRA Healthcare aims to create a unified digital ecosystem that connects all healthcare stakeholders. The platform provides real-time information about healthcare services, enabling patients to find doctors, locate blood banks, book ambulances, and access pharmacy services through a single interface. The system uses intelligent matching to connect patients with appropriate healthcare resources based on location, availability, and specific needs.",
+      problem: "Healthcare systems often struggle with fragmented services, where patients face challenges finding doctors, hospitals, blood resources, and emergency services quickly. Critical healthcare information is scattered across multiple platforms, leading to delays in emergency situations and inefficient resource allocation. As a learning project, this provides an opportunity to understand and address these real-world challenges through technology.",
+      solution: "ZYNETRA Healthcare is a learning project aimed at creating a unified digital ecosystem that connects all healthcare stakeholders. The platform provides real-time information about healthcare services, enabling patients to find doctors, locate blood banks, book ambulances, and access pharmacy services through a single interface. Building this system teaches full-stack development, database design, and healthcare technology concepts while creating a potentially useful solution.",
       role: [
-        "Project planning and system design",
-        "Full-stack development (React, Next.js, Node.js)",
-        "Database design and implementation",
-        "Healthcare data modeling",
-        "User interface design",
-        "API development"
+        "Full project planning and system design",
+        "Frontend development (React, Next.js, TypeScript)",
+        "Backend development (Node.js, PostgreSQL)",
+        "Database schema design and implementation",
+        "Healthcare data modeling and relationships",
+        "User interface and experience design",
+        "API development and integration",
+        "Learning healthcare technology requirements",
       ],
       architecture: "The platform follows a modern full-stack architecture with Next.js for the frontend, Node.js for backend services, and PostgreSQL/Supabase for data storage. The system includes user authentication, role-based access control, real-time data updates, and location-based services for finding nearby healthcare resources.",
       challenges: [
@@ -111,14 +113,16 @@ export const projects: Project[] = [
           solution: "Integrated geographic data handling and proximity-based search algorithms to provide relevant results based on user location."
         }
       ],
-      outcome: "Successfully developed a working prototype demonstrating the core concepts of a unified healthcare platform. The project showcases full-stack development capabilities, database design skills, and understanding of healthcare technology requirements.",
+      outcome: "Successfully developed a working prototype demonstrating core healthcare platform concepts. The project showcases growing full-stack development capabilities, database design understanding, and healthcare technology awareness. Currently in active development as a learning project, with ongoing improvements to features and architecture.",
       learnings: [
-        "Healthcare systems require careful attention to data sensitivity and privacy",
+        "Healthcare systems require careful attention to data sensitivity and privacy considerations",
         "Complex multi-stakeholder platforms need clear role-based access control",
         "Real-time data synchronization is critical for healthcare applications",
         "Full-stack development requires strong understanding of both frontend and backend architecture",
         "Database design significantly impacts application scalability and performance",
-        "User experience is crucial in healthcare applications where time-sensitive decisions are common"
+        "User experience is crucial in healthcare applications where time-sensitive decisions are common",
+        "Project-based learning is highly effective for understanding real-world development challenges",
+        "Building complex systems requires iterative development and continuous refinement",
       ]
     },
     order: 1
@@ -127,8 +131,8 @@ export const projects: Project[] = [
     id: "portfolio",
     slug: "ai-portfolio",
     title: "AI & Data Science Portfolio",
-    shortDescription: "Premium portfolio website built with Next.js, TypeScript, and modern web technologies",
-    description: "A futuristic, premium portfolio website showcasing AI and data science projects, skills, and professional journey. Built with modern web technologies and focusing on performance, accessibility, and user experience.",
+    shortDescription: "Personal portfolio website showcasing projects, skills, and learning journey",
+    description: "A modern, professional portfolio website built to showcase AI and data science projects, technical skills, and academic journey. Developed using Next.js, React, TypeScript, and Tailwind CSS to demonstrate full-stack web development capabilities and design sensibility.",
     category: ["web", "full-stack"],
     technologies: [
       "Next.js",
@@ -143,17 +147,18 @@ export const projects: Project[] = [
     featured: false,
     coverImage: "/images/projects/portfolio-cover.jpg",
     caseStudy: {
-      problem: "As an AI & Data Science student, I needed a professional online presence to showcase my projects, skills, and learning journey to potential recruiters and collaborators. Generic portfolio templates don't effectively communicate technical capabilities or project depth.",
-      solution: "Designed and developed a custom portfolio website with a futuristic, premium aesthetic that reflects my interest in technology and AI. The site features an interactive skills ecosystem, detailed project case studies, and a comprehensive journey timeline. Built with modern web technologies to demonstrate full-stack development capabilities.",
+      problem: "As a first-year AI & Data Science student, establishing a professional online presence is essential for networking, internship opportunities, and showcasing technical growth. Generic portfolio templates don't effectively communicate learning progress, project depth, or technical capabilities in a way that stands out to recruiters and potential collaborators.",
+      solution: "Designed and developed a custom portfolio website from scratch with a modern, professional aesthetic that reflects interest in technology and AI. The site features an interactive skills ecosystem showing current learning areas, detailed project case studies demonstrating hands-on work, and a comprehensive journey timeline. Built with industry-standard web technologies to showcase growing full-stack development skills.",
       role: [
-        "UI/UX planning and design",
+        "Complete UI/UX planning and design",
         "Frontend development with React and Next.js",
-        "Design system creation",
-        "Component architecture",
-        "Theme system implementation",
-        "Animation integration",
-        "Responsive design",
-        "Accessibility implementation"
+        "Design system creation and implementation",
+        "Component architecture and organization",
+        "Theme system with dark/light modes",
+        "Animation integration with Framer Motion",
+        "Responsive design for all devices",
+        "Accessibility implementation (WCAG guidelines)",
+        "SEO optimization for discoverability",
       ],
       architecture: "Built on Next.js 16 with App Router for optimal performance and SEO. Uses TypeScript for type safety, Tailwind CSS for styling, and Framer Motion for animations. Implements a comprehensive design system with reusable components, dark/light theme support, and responsive layouts. Follows modern React patterns with client/server component separation.",
       challenges: [
@@ -173,14 +178,16 @@ export const projects: Project[] = [
           solution: "Leveraged Next.js static generation, proper code splitting, optimized images, and GPU-accelerated CSS animations."
         }
       ],
-      outcome: "Successfully launched a professional portfolio that effectively communicates technical skills and project experience. The site demonstrates proficiency in modern web development, design principles, and attention to detail.",
+      outcome: "Successfully launched a professional portfolio that effectively communicates technical skills, projects, and learning journey. The site demonstrates growing proficiency in modern web development, design principles, and attention to user experience. Deployed on Vercel with proper SEO optimization and accessibility standards.",
       learnings: [
         "Design systems are crucial for maintaining consistency in larger projects",
-        "TypeScript significantly improves code quality and developer experience",
+        "TypeScript significantly improves code quality and catches errors early",
         "Accessibility should be considered from the start, not added later",
-        "Animation can enhance user experience when used thoughtfully",
-        "Performance optimization requires understanding of how frameworks work",
-        "Responsive design is essential for reaching users on all devices"
+        "Thoughtful animation enhances user experience without being distracting",
+        "Performance optimization requires understanding how frameworks work under the hood",
+        "Responsive design is essential for reaching users on all devices",
+        "SEO and metadata are important for portfolio discoverability",
+        "Version control and deployment workflows are key professional skills",
       ]
     },
     order: 2

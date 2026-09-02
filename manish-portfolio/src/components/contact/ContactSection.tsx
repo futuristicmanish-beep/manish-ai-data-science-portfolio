@@ -27,10 +27,10 @@ export function ContactSection() {
             className="text-center space-y-6 max-w-3xl mx-auto"
           >
             <Heading level={2} gradient>
-              Let&apos;s Build Something Meaningful
+              Let&apos;s Connect
             </Heading>
             <p className="text-xl text-[rgb(var(--color-muted-foreground))]">
-              Have an opportunity, project idea, or simply want to connect? Let&apos;s talk.
+              Open to internship opportunities, project collaborations, and mentorship. Let&apos;s talk about AI, data science, or technology.
             </p>
           </motion.div>
 

@@ -33,10 +33,10 @@ export function ProjectsSection() {
             className="text-center space-y-6 max-w-3xl mx-auto"
           >
             <Heading level={2} gradient>
-              Projects
+              Projects & Learning Journey
             </Heading>
             <p className="text-xl text-[rgb(var(--color-muted-foreground))]">
-              Real projects where I apply AI, data science, and software engineering to solve problems
+              Hands-on projects where I apply AI, data science, and software engineering concepts to solve real-world problems
             </p>
           </motion.div>
 

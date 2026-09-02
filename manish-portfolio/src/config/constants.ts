@@ -10,9 +10,9 @@
  */
 export const SITE_INFO = {
   name: "Manish Vidhya Narayanan",
-  title: "Manish Vidhya Narayanan | AI & Data Science",
+  title: "Manish Vidhya Narayanan | AI & Data Science Student",
   description:
-    "AI & Data Science professional specializing in machine learning, healthcare technology, and innovative solutions.",
+    "B.Tech AI & Data Science student building intelligent solutions through machine learning, healthcare technology, and full-stack development. Explore projects, skills, and learning journey.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://manish-ai-data-science-portfolio-rho.vercel.app",
   author: "Manish Vidhya Narayanan",
 } as const;

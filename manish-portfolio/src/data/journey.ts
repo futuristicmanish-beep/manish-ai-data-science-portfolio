@@ -20,19 +20,19 @@ export const journeyData = {
   // About introduction
   about: {
     title: "About Me",
-    subtitle: "A technology-focused learner building projects across AI, data, and digital products",
-    description: "I'm passionate about exploring artificial intelligence and data science through hands-on projects. My journey combines academic learning with practical implementation, focusing on solving real-world problems through technology.",
+    subtitle: "First-year B.Tech AI & Data Science student building practical projects",
+    description: "Currently in my first year at Coimbatore Institute of Engineering and Technology, I'm learning artificial intelligence and data science through hands-on project development. My approach combines academic coursework with practical implementation, focusing on solving real problems through technology.",
   },
 
   // Who I Am
   whoIAm: {
     title: "Who I Am",
     points: [
-      "AI & Data Science student with a passion for technology",
-      "Building practical projects to learn and apply new concepts",
-      "Exploring machine learning, data analysis, and full-stack development",
-      "Interested in healthcare technology and intelligent systems",
-      "Continuously learning and experimenting with emerging technologies",
+      "First-year B.Tech AI & Data Science student at Coimbatore Institute of Engineering and Technology",
+      "Building practical projects to learn Python, C, and software development fundamentals",
+      "Exploring machine learning, data analysis, and full-stack web development",
+      "Interested in healthcare technology applications and intelligent systems",
+      "Learning through hands-on implementation and real-world problem solving",
     ],
   },
 
@@ -237,12 +237,12 @@ export const journeyData = {
   // Vision
   vision: {
     title: "My Vision",
-    statement: "To develop expertise in artificial intelligence and data science, building intelligent products that solve real-world problems and make a positive impact on society.",
+    statement: "To develop deep expertise in artificial intelligence and data science through continuous learning and hands-on project development. Building intelligent solutions that solve real-world problems, with a focus on healthcare technology and positive social impact.",
     focus: [
-      "AI & Machine Learning Solutions",
+      "AI & Machine Learning Mastery",
       "Healthcare Technology Innovation",
-      "Data-Driven Product Development",
-      "Intelligent Systems Design",
+      "Full-Stack Development Skills",
+      "Data-Driven Problem Solving",
       "Continuous Learning & Growth",
     ],
   },

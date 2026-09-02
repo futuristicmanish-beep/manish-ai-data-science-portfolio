@@ -7,9 +7,9 @@
 
 export const profileData = {
   name: "Manish Vidhya Narayanan",
-  title: "AI & Data Science",
-  tagline: "Building intelligent solutions through AI, data, and technology",
-  bio: "Passionate about creating data-driven digital experiences through technology, experimentation, and real-world projects. Focused on machine learning, healthcare technology, and innovative AI solutions.",
+  title: "AI & Data Science Student",
+  tagline: "Learning and building through AI, data science, and hands-on projects",
+  bio: "First-year B.Tech student passionate about artificial intelligence and data science. Building real-world projects to apply machine learning, healthcare technology, and full-stack development skills. Focused on continuous learning and practical implementation.",
   
   // Status indicators
   status: {
